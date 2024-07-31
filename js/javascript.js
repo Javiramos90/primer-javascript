@@ -94,3 +94,28 @@ let poema = `Las rosas son rojas,
 las violetas son azules, 
 javascript es divertido`;
 console.log(poema);
+
+function precioTotal() {
+    // leyendo datos de pantalla
+    let nombre2 = document.getElementById("nombreProducto").value;
+    let precio = document.getElementById("precioProducto").value;
+    precio = Number(precio);
+    let cbIva = document.getElementById("cbIva").checked;
+   
+    // calculo el tipo de iva
+    let iva = 21;
+    let mensaje = "";
+    let precioIva
+    if (!cbIva) {
+        let ivaAplicado = precio * iva / 100;
+        precioIva = precio + ivaAplicado;
+    } else {
+        iva = 10;
+        let ivaAplicado = precio * iva / 100;
+        precioIva = precio + ivaAplicado;
+    }
+    mensaje = `El precio del producto ${nombre2} es ${precio}€ y con iva es ${precioIva}€`;
+    console.log(mensaje);
+    document.getElementById("resultado2").textContent = mensaje;
+}
+

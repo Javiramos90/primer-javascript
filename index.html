@@ -6,7 +6,25 @@
     <title>JavaScript</title>
 </head>
 <body>
-    <!-- enlace a javascript -->
-    <script src="js/javascript.js"></script>
+    <h1>Calculadora de edad de mascotas</h1>
+    <input type="nu" name="" id="nombreMascota" 
+    placeholder="Nombre de tu mascotas">
+    <input type="number" id="edadMascota" 
+    placeholder="Edad de tu mascota">
+    <button onclick="calcularEdad()">Calcular Edad</button>
+    <p id="resultado"></p>
+    <h2>Calcular el importe con iva</h2>
+    <input type="text" id="nombreProducto" 
+    placeholder="Nombre del Producto">
+    <input type="number" id="precioProducto" 
+    placeholder="Precio del Producto">
+    <label for="cbIVA">
+    <input type="checkbox" id="cbIva">
+        Iva Reducido
+    </label>
+    <button onclick="precioTotal()">Calcular Precio</button>
+    <p id="resultado2"></p>
+    <!-- enlace a javascript (final del body)-->
+    <script src="js/javascript2.js"></script>
 </body>
 </html>
