@@ -24,7 +24,6 @@ function calcularValor() {
         }
     }
 
-
     if (estado == true){
         console.log(resultado);
     }
@@ -37,5 +36,5 @@ function resetValor() {
     valor1.value = "";
     valor2.value = "";
     operacion.selectedIndex = 0;
-    resultado.textContent = "";
+    resultado= "";
 }

@@ -1,0 +1,28 @@
+
+body{
+    text-align: center;
+    background-color: rgba(206, 206, 206, 0.533);
+    border-color: black;
+}
+
+#contenedor{
+    background-color: white;
+    margin-left: 50rem;
+    margin-right: 50rem;
+    padding-bottom:2rem;
+    padding-top: 0.8rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.577);
+}
+#contenedor button{
+    cursor: pointer;
+    background-color: green;
+}
+.btnEliminar{
+    background-color: red;
+}
+ul{
+    list-style-type:none;
+    text-align: start;
+    padding-left: 1rem;
+}
