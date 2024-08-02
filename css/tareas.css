@@ -1,28 +1,52 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 1rem;
+}
 body{
     text-align: center;
     background-color: rgba(206, 206, 206, 0.533);
     border-color: black;
+    max-width: 400px;
+    margin: 0 auto;
 }
-
 #contenedor{
     background-color: white;
-    margin-left: 50rem;
-    margin-right: 50rem;
-    padding-bottom:2rem;
-    padding-top: 0.8rem;
     border-radius: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.577);
+    /* margin-left: 50rem;
+    margin-right: 50rem; */
+    padding-bottom:2rem;
+    padding-top: 0.8rem;
+    /* display: flex; */
 }
+#contenedor input{
+    width: 70%;
+    padding: 0.2rem;
+    margin-left: 1rem; 
+} 
 #contenedor button{
     cursor: pointer;
     background-color: green;
+    text-align: center;
+
 }
-.btnEliminar{
-    background-color: red;
+#contenedor .btnEliminar{
+   color: rgb(0, 0, 0);
+   background-color: red;
+   /* border-radius: 0.5rem; */
 }
-ul{
+#listaTarea{
     list-style-type:none;
     text-align: start;
-    padding-left: 1rem;
+    padding: 1rem 2rem;
+}
+li{
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
 }
