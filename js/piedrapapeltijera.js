@@ -24,12 +24,12 @@ function jugar(eleccionJugador){
         puntosMaquina++;
     }
 
-    const emojis = [
+    const emojis = {
         piedra:`👊`,
         papel: `🖐`,
-        tijera: `✌`];
+        tijera: `✌`};
 
     document.getElementById(`result`).innerHTML = `Tu elección: ${emojis[eleccionJugador]} vs Computadora: ${emojis[eleccionMaquina]} ${resultado}`
 
-    document.getElementById(`score`).textContent
+    document.getElementById(`score`).textContent = `Jugador: ${puntosJugador} | ${puntosMaquina}`
 }
